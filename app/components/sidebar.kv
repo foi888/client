@@ -1,0 +1,29 @@
+<SideBar>:
+    id: nav_drawer
+    BoxLayout:
+        orientation:'vertical'
+        padding: '8dp'
+        spacing: '8dp'
+        AsyncImage:
+            id: avatar
+            source: 'https://www.gravatar.com/avatar/7aa1e4b788b85ae032006ee2bfade9e6?d=identicon&s=128%22%7D'
+        MDLabel:
+            id: username
+            text: 'username'
+            bold: True
+            adaptive_height: True
+        MDLabel:
+            id: email
+            text: 'email'
+            adaptive_height: True
+        ScrollView:
+            MDList:
+                OneLineIconListItem:
+                    on_press: root.open_profile()
+                    text: 'Profile'
+                    IconLeftWidget:
+                        icon: 'account'
+                OneLineIconListItem:
+                    text: 'logout'
+                    IconLeftWidget:
+                        icon: 'logout'

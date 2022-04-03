@@ -1,0 +1,17 @@
+<LoginScreen>:
+    MDTextField:
+        id: username
+        hint_text: 'Username'
+        text: 'test123'
+        pos_hint: {"center_x": 0.5, "center_y": 0.6}
+        size_hint: (0.5, 0.1)
+    MDTextField:
+        id: password
+        text: '123'
+        hint_text: 'Password'
+        pos_hint: {"center_x": 0.5, "center_y": 0.5}
+        size_hint: (0.5, 0.1)
+    MDRectangleFlatButton:
+        text: "login"
+        pos_hint: {"center_x": 0.5, "center_y": 0.4}
+        on_press: self.parent.login()

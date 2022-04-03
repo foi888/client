@@ -1,0 +1,20 @@
+<RegisterScreen>:
+    MDTextField:
+        id: username
+        hint_text: 'Username'                             
+        pos_hint: {"center_x": 0.5, "center_y": 0.6}
+        size_hint: (0.5, 0.1)
+    MDTextField:
+        id: password
+        hint_text: 'Password'                               
+        pos_hint: {"center_x": 0.5, "center_y": 0.5}
+        size_hint: (0.5, 0.1)
+    MDTextField:
+        id: email                                         
+        hint_text: 'email'  
+        pos_hint: {"center_x": 0.5, "center_y": 0.3}
+        size_hint: (0.5, 0.1)
+    MDRectangleFlatButton:  
+        text: "register"                                      
+        pos_hint: {"center_x": 0.5, "center_y": 0.4}
+        on_press: self.parent.register()
